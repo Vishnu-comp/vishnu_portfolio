@@ -1,6 +1,5 @@
-# vishnu_portfolio
 
-# eqf
+# Advanced Project
 
 ## Table of Contents
 - [Badges](#badges)
@@ -12,44 +11,51 @@
 - [Tests](#tests)
 - [Contributing](#contributing)
 - [License](#license)
-- [Custom Sections](#custom-sections)
 - [Uploaded Images](#uploaded-images)
 
 ## Badges
-ewfs
+![badge](https://img.shields.io/badge/example-advanced-blue)
 
 ## Description
-qwfc
+A more advanced description with features and usage.
 
 ## Features
-- wfc
+- Advanced Feature 1
+- Advanced Feature 2
+- Advanced Feature 3
 
 ## Programming Languages
-- ![C]([object Object]) C
-- ![JavaScript]([object Object]) JavaScript
+
 
 ## Installation
 ```bash
-efewdv
+yarn install
+yarn start
 ```
 
 ## Usage
 ```bash
-egdv
+yarn serve
 ```
 
 ## Tests
-```bash
-ewdv
-```
+No tests provided.
 
 ## Contributing
-ed
+No contribution guidelines provided.
 
 ## License
-efc
+Apache-2.0
 
 ## Uploaded Images
-![Image 1](blob:http://localhost:3000/e2e8a5a4-9063-492a-aa99-bc0446328628)
-![Image 2](blob:http://localhost:3000/90197376-f7d7-4437-a49e-4c725fd642e7)
-![Image 3](blob:http://localhost:3000/05be52da-c8ce-4d2b-a5b8-e5f94e184322)
+![Image 1](blob:http://localhost:3000/6e83cbe2-7437-4dda-8fa3-7ad10eb474cf)
+![Image 2](blob:http://localhost:3000/84fecde3-ac80-46f2-b3fe-49e7591994cb)
+![Image 3](blob:http://localhost:3000/ddd37373-396e-451a-b731-3b746b304331)
+
+## Social Media Links
+  
+  
+
+
+
+    
