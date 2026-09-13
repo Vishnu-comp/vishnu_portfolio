@@ -1,0 +1,316 @@
+/* --------- */
+/* Work page — reuses the palette already defined in style.css */
+/* (var(--section-background-color), var(--imp-bold-text-color) #7500fa) */
+/* --------- */
+
+.work-section {
+  position: relative !important;
+  padding-top: 150px !important;
+  padding-bottom: 30px !important;
+  background-image: var(--section-background-color) !important;
+}
+
+.work-subheading {
+  color: white !important;
+  font-size: 1em !important;
+  max-width: 760px;
+  margin: 0 auto 10px auto !important;
+}
+
+.work-draft-note {
+  color: #a588c0 !important;
+  font-size: 0.85em !important;
+  border: 1px solid rgba(117, 0, 250, 0.4);
+  border-radius: 6px;
+  padding: 8px 14px;
+  display: inline-block;
+  background-color: rgba(117, 0, 250, 0.08);
+}
+
+.work-draft-note code {
+  color: #e5ff00 !important;
+  background: transparent;
+  font-size: 0.95em;
+}
+
+/* Toolbar: filter pills + view switch */
+.work-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+  justify-content: center;
+  margin: 25px 0 10px 0;
+}
+
+.work-filters,
+.work-view-toggle {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.work-view-toggle {
+  margin-left: 6px;
+  padding-left: 16px;
+  border-left: 1px solid rgba(117, 0, 250, 0.35);
+}
+
+.work-pill {
+  color: white !important;
+  background-color: transparent !important;
+  border: 1px solid rgba(117, 0, 250, 0.55) !important;
+  border-radius: 30px;
+  padding: 6px 16px;
+  font-size: 0.9em;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+.work-pill:hover {
+  background-color: #38007731 !important;
+  border-color: var(--imp-bold-text-color) !important;
+}
+
+.work-pill.active {
+  background-color: #7500fa !important;
+  border-color: #7500fa !important;
+  color: #fff !important;
+}
+
+.work-pill.small {
+  padding: 5px 14px;
+  font-size: 0.82em;
+}
+
+.work-pill-count {
+  margin-left: 8px;
+  font-size: 0.78em;
+  opacity: 0.75;
+}
+
+/* Card: same shell as .project-card-view, just laid out for text */
+.work-card-view {
+  padding: 6px !important;
+}
+
+.work-meta,
+.work-meta-inline {
+  color: #a588c0 !important;
+  font-size: 0.8em !important;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.work-title {
+  font-weight: 600 !important;
+  padding-top: 6px !important;
+  padding-bottom: 4px !important;
+}
+
+.work-tagline {
+  text-align: justify !important;
+  font-size: 15px !important;
+  color: rgba(255, 255, 255, 0.85) !important;
+  margin-bottom: 0 !important;
+}
+
+.work-details {
+  display: none;
+  margin-top: 16px;
+  border-top: 1px solid rgba(117, 0, 250, 0.35);
+  padding-top: 14px;
+  text-align: left;
+}
+
+.work-details.open {
+  display: block;
+}
+
+.work-detail-block {
+  margin-bottom: 14px;
+}
+
+.work-detail-block h4 {
+  color: var(--imp-bold-text-color) !important;
+  font-size: 0.95em !important;
+  font-weight: 600 !important;
+  margin-bottom: 4px;
+}
+
+.work-detail-block p {
+  color: rgba(255, 255, 255, 0.85) !important;
+  font-size: 14.5px !important;
+  text-align: justify !important;
+  margin-bottom: 0 !important;
+}
+
+/* Tech chips — same style as the techstack icons' rounded boxes */
+.work-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 14px;
+}
+
+.work-chip {
+  font-size: 0.75em;
+  color: white !important;
+  background-color: rgba(117, 0, 250, 0.18);
+  border: 1px solid rgba(117, 0, 250, 0.45);
+  border-radius: 4px;
+  padding: 3px 10px;
+}
+
+.work-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.work-actions .btn {
+  flex: 1 1 auto;
+  border-radius: 4px;
+}
+
+.work-links {
+  display: flex;
+  gap: 8px;
+}
+
+.work-links .btn {
+  flex: 0 0 auto;
+  padding: 6px 12px !important;
+}
+
+/* Timeline view */
+.work-timeline {
+  position: relative;
+  max-width: 900px;
+  margin: 30px auto 0 auto;
+  padding-left: 34px;
+}
+
+.work-timeline::before {
+  content: "";
+  position: absolute;
+  left: 8px;
+  top: 6px;
+  bottom: 6px;
+  width: 2px;
+  background: linear-gradient(
+    to bottom,
+    rgba(117, 0, 250, 0.9),
+    rgba(117, 0, 250, 0.15)
+  );
+}
+
+.work-tl-row {
+  position: relative;
+  margin-bottom: 22px;
+}
+
+.work-tl-dot {
+  position: absolute;
+  left: -34px;
+  top: 4px;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background-color: #0c0513;
+  border: 2px solid #7500fa;
+  color: #7500fa;
+  font-size: 0;
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease 0s;
+}
+
+.work-tl-row.open .work-tl-dot,
+.work-tl-dot:hover {
+  background-color: #7500fa;
+  color: #fff;
+  box-shadow: 0 0 12px rgba(117, 0, 250, 0.9);
+}
+
+.work-tl-body {
+  color: white !important;
+  background-color: transparent !important;
+  box-shadow: 0 4px 5px 3px rgb(72, 0, 155) !important;
+  border-radius: 6px;
+  padding: 16px 20px;
+  opacity: 0.92;
+  transition: all 0.4s ease 0s;
+  text-align: left;
+}
+
+.work-tl-row.open .work-tl-body {
+  box-shadow: 0 4px 5px 3px rgba(117, 0, 250, 1) !important;
+  opacity: 1;
+}
+
+.work-tl-head {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  cursor: pointer;
+}
+
+.work-tl-num {
+  color: #a588c0 !important;
+  font-size: 0.85em;
+  padding-top: 4px;
+}
+
+.work-tl-title {
+  flex: 1 1 auto;
+}
+
+.work-tl-title h3 {
+  font-size: 1.25em !important;
+  font-weight: 600 !important;
+  margin-bottom: 2px;
+}
+
+.work-tl-toggle {
+  color: var(--imp-bold-text-color) !important;
+  font-size: 0.85em;
+  padding-top: 6px;
+  white-space: nowrap;
+}
+
+.work-tl-details {
+  margin-top: 12px;
+  border-top: 1px solid rgba(117, 0, 250, 0.35);
+  padding-top: 12px;
+}
+
+.work-footnote {
+  color: #a588c0 !important;
+  font-size: 0.85em !important;
+  padding-top: 14px;
+}
+
+@media (max-width: 767px) {
+  .work-toolbar {
+    gap: 8px;
+  }
+
+  .work-view-toggle {
+    margin-left: 0;
+    padding-left: 0;
+    border-left: none;
+  }
+
+  .work-timeline {
+    padding-left: 26px;
+  }
+
+  .work-tl-dot {
+    left: -26px;
+  }
+}
