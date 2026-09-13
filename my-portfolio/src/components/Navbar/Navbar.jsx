@@ -14,6 +14,7 @@ import {
 } from "react-icons/ai";
 import { GiSkills } from "react-icons/gi"
 import { CgFileDocument } from "react-icons/cg";
+import { MdWorkOutline } from "react-icons/md";
 
 
 function NavBar() {
@@ -79,6 +80,16 @@ function NavBar() {
                   style={{ marginBottom: "2px" }}
                 />{" "}
                 Projects
+              </Nav.Link>
+            </Nav.Item>
+
+            <Nav.Item>
+              <Nav.Link
+                as={Link}
+                to="/work"
+                onClick={() => updateExpanded(false)}
+              >
+                <MdWorkOutline style={{ marginBottom: "2px" }} /> Work
               </Nav.Link>
             </Nav.Item>
 
